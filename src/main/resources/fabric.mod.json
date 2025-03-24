@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "sequoiatrialproject",
+	"version": "${version}",
+	"name": "sequoia-trial-project",
+	"description": "thegekka's Sequoia trial project",
+	"authors": [
+		"thegekka"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sequoiatrialproject/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.gekka.sequoiatrialproject.SequoiaTrialProject"
+		],
+		"client": [
+			"com.gekka.sequoiatrialproject.SequoiaTrialProjectClient"
+		]
+	},
+	"mixins": [
+		"sequoiatrialproject.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
